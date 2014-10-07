@@ -1,0 +1,104 @@
+/*==========
+	recet
+==========*/
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ addres, ul, ol, dl, dt, dd, table, th, td, form, fieldset{
+  line-height:1.0;
+  font-familu:"Hiragino Kaku Gothic ProN", meiryo, sans-serif;
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+ul,ol{
+  list-style:none;/*黒丸を消す*/
+}
+a{
+text-decoration: none;/*下線を消す*/
+}
+img{
+ border:0;
+ vertical-align: middle;
+}
+ing,input{
+  vertical-aligin: bottom;
+}
+
+/*==========
+	article
+==========*/
+h1{	/*hxの初期化*/
+	font-family: "Hiragino Kaku Gothic ProN";
+	text-align: left;
+	font-size: 100%;
+	font-weight : normal;
+	margin: 0px 50px 0px 50px;
+}
+p{	/*article内記事*/
+	text-align: left;
+	font-family: "Hiragino Kaku Gothic ProN";
+	line-height: 130%;
+	margin: 0px 50px 30px 50px;
+}
+
+/*==========
+	footer
+==========*/
+#footer{	/*回り込み解除*/
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-size: 70%;
+	text-align: center;
+	padding-top : 100px;
+	clear : both ;
+}
+
+/*================
+	Media Query
+================*/
+@media only screen and (max-width: 640px) {	/*モバイルビュー*/
+	html{
+	background-color: #9ff3ff;
+	}
+	img{
+		max-width : 100% ;
+		height: auto ;
+	}
+	p{
+		text-align: left;
+		font-size: 80%;
+		width: 100%;
+		margin : 5px;
+		padding : 0px;
+	}
+	map{
+		display: none;
+	}
+		a{
+	color: black;
+	}
+}
+
+@media only screen and (min-width: 641px) {	/*デスクトップビュー*/
+	html{
+		Width:100%;
+		background-color: #9ff3ff;
+	} 
+	map{
+		margin : 70px 5px 30px 5px ;
+	}
+	.nav{
+		margin-top: 100px;
+	}
+	about.img{
+		text-align: left;
+	}
+	a{
+	color: black;
+	}
+	.mobile{
+		display:none;
+	}
+	.wrap{
+	margin: 100px;
+	}
+}
