@@ -1,5 +1,5 @@
 /*==========
-	recet
+	reset
 ==========*/
 html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
  addres, ul, ol, dl, dt, dd, table, th, td, form, fieldset{
@@ -28,17 +28,29 @@ ing,input{
 	article
 ==========*/
 h1{	/*hxの初期化*/
-	font-family: "Hiragino Kaku Gothic ProN";
+/*	font-family: "Hiragino Kaku Gothic ProN";
 	text-align: left;
-	font-size: 100%;
+	font-size: 90%;
 	font-weight : normal;
-	margin: 0px 50px 0px 50px;
+	margin: 0px 50px 0px 50px;*/
 }
 p{	/*article内記事*/
 	text-align: left;
 	font-family: "Hiragino Kaku Gothic ProN";
+	font-size: 90%;
 	line-height: 130%;
-	margin: 0px 50px 30px 50px;
+	margin: 10px 50px 20px 50px;
+}
+
+.about dl{
+	margin: 10px 40px 0 40px;
+}
+.about dt{
+	margin-left: 20px; 
+	float: left;
+	clear: both;
+}
+.about dd{
 }
 
 /*==========
@@ -73,16 +85,23 @@ p{	/*article内記事*/
 	map{
 		display: none;
 	}
-		a{
+	a{
 	color: black;
 	}
+	.about dl{
+		margin-left: 0px;
+	}
+	.about dd{
+		padding-left: 30px
+	}
+
 }
 
 @media only screen and (min-width: 641px) {	/*デスクトップビュー*/
 	html{
 		Width:100%;
 		background-color: #9ff3ff;
-	} 
+	}
 	map{
 		margin : 70px 5px 30px 5px ;
 	}
